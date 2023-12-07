@@ -12,6 +12,6 @@ total = 0
 
 for line in example_input.split():
     nums = remove_non_num(line)
-    total += int(nums[0])*10 + int(nums[0]) if len(nums) == 1 else int(nums[0])*10 + int(nums[len(nums)-1]) #doesnt account for no numbers in nums ik
+    total += int(nums[0])*10 + int(nums[0]) if len(nums) == 1 else int(nums[0])*10 + int(nums[-1]) #doesnt account for no numbers in nums ik
     
 print(total)
