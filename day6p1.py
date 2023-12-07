@@ -6,7 +6,7 @@ for race in races:
     for time in range(race[0]):
         _t = time * (race[0] - time)
         if _t > race[1]:
-            possible_wins[len(possible_wins)-1].append(_t)
+            possible_wins[-1].append(_t)
             
 total = 1#assumes at least one possiblity in all races can win
 for x in [len(i) for i in possible_wins]:
