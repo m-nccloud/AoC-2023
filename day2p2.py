@@ -6,14 +6,12 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green'''
 
 lines = example_input.split('\n')
 
-game_id = 1
-
 colors = ['red','green','blue']
 
 power_sum = 0
 
-while game_id <= len(example_input.split('\n')):#does assume its in order
-    series = example_input.split('\n')[game_id-1].split(':')[1].split(';')
+for game_id in range(len(example_input.split('\n'))):#does assume its in order
+    series = example_input.split('\n')[game_id].split(':')[1].split(';')
     
     max_cubes = {k:0 for k in colors}
     
@@ -29,7 +27,5 @@ while game_id <= len(example_input.split('\n')):#does assume its in order
         power *= max_cubes[k]
     
     power_sum += power
-        
-    game_id += 1
     
 print(power_sum)
