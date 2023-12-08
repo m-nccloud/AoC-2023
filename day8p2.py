@@ -1,3 +1,8 @@
+### My original solution, which is more correct, relied on brute forcing the problem
+#   the only reason least common multiple works is because (probably) Advent of Coding wanted it this way
+#   if the data wasn't setup to be cyclical then this solution breaks
+#   a solution that doesn't break with data that isnt made to be cyclical https://github.com/savvamadar/AoC-2023/blob/main/day8p2_ALT.py
+
 example_input = '''LR
 11A = (11B, XXX)
 11B = (XXX, 11Z)
