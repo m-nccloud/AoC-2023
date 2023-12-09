@@ -6,7 +6,7 @@ lines = example_input.split('\n')
 
 extrapolated_sum = 0
 for line in lines:
-    line_nums = line.split(' ')
+    line_nums = line.split()
     diffs = [[int(x) for x in line_nums]]
     
     while not all([x == 0 for x in diffs[-1]]):
